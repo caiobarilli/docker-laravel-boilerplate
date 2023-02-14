@@ -38,12 +38,6 @@ Suba a primera vez os containers com o comando:
 docker-compose up -d
 ```
 
-Agora acesse o container com o comando
-
-```
-sh ./laravel bash
-```
-
 Você pode instalar o laravel com o comando
 
 ```
