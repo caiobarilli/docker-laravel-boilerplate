@@ -16,20 +16,21 @@ services:
       - laravel
 
   # Database
-  db:
-    image: mysql:5.7
+  mysql:
+    image: 'mysql/mysql-server:8.0'
     ports:
-      - '3307:3306'
-    volumes:
-      - db_data:/var/lib/mysql
-    restart: always
+        - '${FORWARD_DB_PORT:-3306}:3306'
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: laravel
-      MYSQL_USER: laravel
-      MYSQL_PASSWORD: laravel
+        MYSQL_ROOT_PASSWORD: 'laravel'
+        MYSQL_ROOT_HOST: '%'
+        MYSQL_DATABASE: 'laravel'
+        MYSQL_USER: 'laravel'
+        MYSQL_PASSWORD: 'laravel'
+        MYSQL_ALLOW_EMPTY_PASSWORD: 1
+    volumes:
+        - 'db_data:/var/lib/mysql'
     networks:
-      - laravel
+        - laravel
 
 networks:
   laravel:
