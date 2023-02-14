@@ -35,6 +35,7 @@ RUN apk --no-cache add \
     php81-phar \
     php81-intl \
     php81-dom \
+    php81-xmlwriter \
     php81-xmlreader \
     php81-ctype \
     php81-session \
