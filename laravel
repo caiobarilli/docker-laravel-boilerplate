@@ -9,7 +9,7 @@ if [ "$str" = "bash" ]; then
 fi
 
 # Instala o Laravel
-if [ "$str" = "laravel" ]; then
+if [ "$str" = "install" ]; then
     docker exec -it $container_id /bin/bash -c "
     composer create-project laravel/laravel laravel
     "
@@ -48,6 +48,7 @@ fi
 if [ "$str" = "permissions" ]; then
     docker exec -it $container_id /bin/bash -c "
     php artisan storage:link
+    chown -R 1000:1000 ~/code/docker-laravel-boilerplate
     chmod o+w ./storage/ -R
     "
 fi
