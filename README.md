@@ -41,19 +41,19 @@ docker-compose up -d
 Agora acesse o container com o comando
 
 ```
-sh ./_bash.sh
+sh ./app bash
 ```
 
 Você pode instalar o laravel com o comando
 
 ```
-sh ./_laravel.sh
+sh ./app laravel
 ```
 
 Adicione as permissões da pasta storage com o comando
 
 ```
-sh ./_permissions.sh
+sh ./app permissions
 ```
 
 acesse seu [navegador](http://localhost/) para visualizar o projeto.
