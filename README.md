@@ -56,4 +56,4 @@ Adicione as permissões da pasta storage com o comando
 sh ./_laravel.sh
 ```
 
-acesse seu [navegador](http://localhost/) para vizualizar o projeto.
+acesse seu [navegador](http://localhost/) para visualizar o projeto.
