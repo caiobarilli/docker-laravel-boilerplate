@@ -35,7 +35,7 @@ docker-compose build
 Suba a primera vez os containers com o comando:
 
 ```sh
-docker-compose up -d
+docker-compose up
 ```
 
 Você pode instalar o laravel com o comando
