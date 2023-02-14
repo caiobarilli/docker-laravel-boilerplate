@@ -48,7 +48,7 @@ fi
 if [ "$str" = "permissions" ]; then
     docker exec -it $container_id /bin/bash -c "
     php artisan storage:link
-    chown -R 1000:1000 ~/code/docker-laravel-boilerplate
+    chown -R 1000:1000 ./
     chmod o+w ./storage/ -R
     "
 fi
