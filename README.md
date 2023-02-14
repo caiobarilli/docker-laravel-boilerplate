@@ -47,7 +47,7 @@ sh ./laravel bash
 Você pode instalar o laravel com o comando
 
 ```
-sh ./laravel laravel
+sh ./laravel install
 ```
 
 Adicione as permissões da pasta storage com o comando
