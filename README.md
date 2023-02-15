@@ -41,13 +41,13 @@ docker-compose up
 Você pode instalar o laravel com o comando
 
 ```
-sh ./laravel install
+sh ./app install
 ```
 
 Adicione as permissões da pasta storage com o comando
 
 ```
-sh ./laravel permissions
+sh ./app permissions
 ```
 
 acesse seu [navegador](http://localhost/) para visualizar o projeto.
