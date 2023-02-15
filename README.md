@@ -50,4 +50,4 @@ Adicione as permissões da pasta storage com o comando
 sh ./app permissions
 ```
 
-acesse seu [navegador](http://localhost/) para visualizar o projeto.
+acesse seu [navegador](http://localhost:8000/) para visualizar o projeto.
